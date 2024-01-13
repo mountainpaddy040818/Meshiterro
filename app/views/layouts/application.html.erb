@@ -20,7 +20,11 @@
       </li>
       
       <li>
-        <%= link_to "Log_out", destroy_user_session_path, method: :delete %>
+        <%= link_to "マイページ", user_path(current_user.id) %>
+      </li>
+      
+      <li>
+        <%= link_to "Log_out", destroy_user_session_path, method: :get %>  
       </li>
       
         <% else %>
